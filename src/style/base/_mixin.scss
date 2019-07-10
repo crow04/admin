@@ -1,0 +1,14 @@
+@mixin font($font:14px) {
+  font-size:$font;
+}
+@mixin nav-bg-color($color:rgb(84, 92, 100)){
+  background-color:$color; 
+}
+@mixin border ($wdith:1px,$color:#ddd){
+  border-style: solid;
+  border-color: $color;
+  border-width: $wdith;
+}
+@mixin bg-color($color:#f00) {
+  background-color: $color
+}

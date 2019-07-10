@@ -1,0 +1,228 @@
+@import "base/init";
+@import "base/variable";
+@import "base/mixin";
+
+body {
+  @include font($font-m)
+}
+
+.opened {
+  width: 50px;
+}
+
+.root {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.el-container {
+  height: 100%;
+}
+
+.side-nav {
+  width: 200px;
+}
+
+.closed_nav {
+  width: 64px !important;
+  overflow: hidden !important;
+}
+
+.el-menu {
+  height: 100%;
+}
+
+.side-nav {
+  width: 201px;
+  overflow: hidden;
+}
+
+.closed_nav span.hidden,
+.closed_nav i.hidden,
+.closed_nav i.el-submenu__icon-arrow,
+.el-icon-arrow-right {
+  display: none;
+}
+
+.menu-toggle {
+  width: 180px;
+  margin-left: 10px;
+  padding: 0;
+  color: rgb(255, 208, 75);
+  margin-bottom: 5px;
+}
+
+.menu-toggle.el-button.is-round {
+  padding: 2px;
+}
+
+.menu-toggle.el-button--info.is-active,
+.menu-toggle.el-button--info:active {
+  color: rgb(255, 208, 75);
+}
+
+.el-header {
+  height: auto !important;
+  padding: 0 !important;
+  z-index: 0;
+  @include font($font-m);
+  border-bottom: 1px solid #dddddd;
+}
+
+.el-main {
+  @include bg-color($base-bg-color)
+}
+
+.el-breadcrumb {
+  padding: 12px
+}
+
+.setting-coontainer {
+  height: 36px !important;
+  // 
+  width: 100%;
+}
+
+.setting-coontainer {}
+
+.badge-container {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.badge-container .el-button {
+  margin-top: -2px;
+}
+
+.user-dropdown {
+  padding: 3px;
+  @include font($font-l)
+}
+
+i.iconfont.icon-mima,
+i.iconfont.icon-user,
+i.iconfont.icon-eye-slash {
+  color: #889aa4;
+  position: absolute;
+  font-size: 20px;
+}
+
+i.iconfont.icon-user {
+  top: 5px;
+  left: 10px;
+}
+
+i.iconfont.icon-mima {
+  top: 5px;
+  left: 10px;
+}
+
+i.iconfont.icon-eye-slash {
+  top: 5px;
+  right: -25px;
+  cursor: pointer;
+}
+
+.header-navbar {
+  position: relative;
+  border-bottom: 1px solid #eeeeee;
+  z-index: -1;
+  height: 50px;
+}
+
+i.iconfont.icon-bars.nav-toggle {
+  transform: none;
+  font-size: 30px;
+  position: relative;
+  top: 2px;
+  left: 5px;
+  cursor: pointer;
+  display: inline-block;
+  color: #2d3a4b;
+}
+
+.active.nav-toggle {
+  transform: rotate(90deg) !important;
+}
+
+.setting-box {
+  position: absolute;
+  right: 10px;
+  top: 8px;
+}
+
+.tool-dropdown {
+  margin-left: 20px;
+}
+
+.closed_body {
+  width: calc(100% - 201px);
+  overflow: hidden !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+i.iconfont {
+  font-size: 20px;
+  padding: 0 5px;
+  color: #ffffff;
+}
+
+.login-bg {
+  background-color: #2d3a4b;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.login-form {
+  width: 450px;
+  margin: 0 auto;
+  padding: 160px 0;
+}
+
+.login-btn {
+  width: 450px;
+  height: 40px;
+  @include font($font-xl)
+}
+
+.login-title {
+  padding: 10px;
+  text-align: center;
+  color: #ffffff;
+  padding-bottom: 40px;
+}
+
+.login-input {
+  background: rgba(0, 0, 0, .1);
+  height: 50px;
+
+}
+
+.login-input .el-input__inner {
+  background-color: inherit;
+  border-radius: 5px;
+  padding-left: 35px;
+  border: 1px solid hsla(0, 0%, 100%, .1);
+  height: 50px !important;
+  color: #ffffff;
+
+  &:hover,
+  &:active {
+    border: 1px solid hsla(0, 0%, 100%, .1);
+  }
+}
+
+.form-item {
+  position: relative;
+}
